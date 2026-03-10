@@ -1,0 +1,38 @@
+POST http://localhost:8000/api/transactions/
+Content-Type: application/json
+
+{
+    "text": "Liste des courses",
+    "amount": 244243.00
+}
+
+
+###
+GET http://localhost:8000/api/transactions/f51ce333-74a0-442f-a846-ff72c7daf55e/
+
+
+###
+GET http://localhost:8000/api/transactions/
+
+
+###
+DELETE http://localhost:8000/api/transactions/e72686ea-328c-44ae-a3c6-70db3eb5fc1b/
+
+
+
+###
+PUT http://localhost:8000/api/transactions/4d15173a-c1a9-4d9c-bee9-e90f24891d51/
+Content-Type: application/json
+
+{
+    "text": "Liste des course",
+    "amount": 24424.00
+}
+
+###
+PATCH http://localhost:8000/api/transactions/4d15173a-c1a9-4d9c-bee9-e90f24891d51/
+Content-Type: application/json
+
+{
+    "text": "Liste de course"
+}
